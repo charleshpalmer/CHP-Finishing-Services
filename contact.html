@@ -48,103 +48,137 @@
 
                 <li> <a href="gallery.html"> Gallery </a></li>
 
-                <li> <a href="contact.html"> Contact </a></li>
+                <li> <a href="#"> Contact </a></li>
 
             </ul>
 
         </div>
 
     </nav>
-
-    <div class="hero">
-
-        <div class="container">
-
-            <h1> CHP FINISHING SERVICES LTD </h1>
-
-            <p> Surface Coating and Repair Specialist. </p>
-
-        </div>
-
-    </div>
     
-    <section class="container content">
+    <section class="container content" style="padding-top: 150px;">
 
-        <h2> Who Are We? - </h2>
+        <form id="contact-form" method="post" > <!--- Start of contact form -->
 
-        <p> We are based in the South West of England who specialise in cosmetic surface coating and repairs. <br> 
-
-            Any surface in or on the home which has become scratched, dented, chipped can be restored by us to look like new. We are able to repair any surface - everything from baths to brickwork, Worktops to windows, Floors to doors and just about everything in between - right up to the roof. <br> 
-            
-            We Repair: Chips in Baths, Showers, Laminate Flooring, Kitchen Worktops, Stone, Marble, Powder Coated Surfaces, Plastic and more. <br> <br> 
-        
-        </p>
-
-        <h3> Content Two </h3>    
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias ipsum voluptatem quibusdam laudantium unde recusandae perspiciatis consequatur voluptas non delectus, temporibus eius aliquam fugit quidem tempore a praesentium quasi architecto blanditiis, consectetur quas quisquam. Cumque molestiae reiciendis dignissimos, modi quisquam labore dicta fuga maxime ea enim illo commodi quod, earum eum qui obcaecati ipsam. Modi, itaque velit delectus sapiente, sed ducimus illo ullam facilis doloribus tempore dolore minima aut sit beatae ipsum fugit ipsa? Nesciunt reiciendis nam minima ad consectetur aut recusandae accusantium eaque assumenda vitae corrupti rem iusto, non facilis provident quos libero odit incidunt veritatis beatae quod.</p>
-    
-    </section>
-
-    <!--- Welcome Section -->
-
-<div class="container-fluid padding">
-
-	<div class="row welcome text-center">
+			<div class="messages"></div>
 		
-		<div class="col-12"> <!--- Creating a div with a column size of 12 -->
-			
-			<h1 class="display-4"> Organise a Booking! </h1> <!--- Creating a heading -->
+			<div class="controls">
+		
+				<div class="row"> <!--- Creating a Form row -->
+		
+					<div class="col-md-6"> <!--- Creating a Div spanning 6 columns -->
+		
+						<div class="form-group">
+		
+							<label for="form_name">Firstname *</label> <!--- Creating a form label "Firstname" -->
+		
+							<input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required."> <!--- Setting parameters for user input -->
+		
+							
+						</div>
+		
+					</div>
+		
+					<div class="col-md-6"> <!--- Creating a Div spanning 6 columns -->
+		
+						<div class="form-group">
+		
+							<label for="form_lastname">Lastname *</label> <!--- Creating a form label "Lastname" -->
+		
+							<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."> <!--- Setting parameters for user input -->
+		
+							
+						</div>
+		
+					</div>
+		
+				</div>
+		
+				<div class="row"> <!--- Creating a Form row -->
+		
+					<div class="col-md-6"> <!--- Creating a Div spanning 6 columns -->
+		
+						<div class="form-group">
+		
+							<label for="form_email">Email *</label> <!--- Creating a form label "Email" -->
+		
+							<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required."> <!--- Setting parameters for user input -->
+		
+						</div>
+		
+					</div>
+		
+					<div class="col-md-6"> <!--- Creating a Div spanning 6 columns -->
+		
+						<div class="form-group">
+		
+							<label for="form_need">How can we help you? *</label> <!--- Creating a form label "Email" -->
+		
+							<select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need."> <!--- Creating a Form drop down -->
+		
+								<option value="">Select an Option</option> 
+		
+								<option value="Request repair job">Request Repair Job</option> <!--- Drop down options -->
+		
+								<option value="Request home visit">Request Home Visit</option> <!--- Drop down options -->
+		
+								<option value="Request copy of an invoice">Request Telephone Contact</option> <!--- Drop down options -->
+		
+								<option value="Join email list">Join Our E-Mail List</option> <!--- Drop down options -->
+		
+								<option value="Other">Other</option> <!--- Drop down options -->
+		
+							</select>
+		
+						</div>
+		
+					</div>
+		
+				</div>
+		
+				<div class="row"> <!--- Creating a Form row -->
+		
+					<div class="col-md-12"> <!--- Creating a Div spanning 12 columns -->
+		
+						<div class="form-group">
+		
+							<label for="form_message">Message for CHP *</label> <!--- Creating a form label "Message" -->
+		
+							<textarea id="form_message" name="message" class="form-control" placeholder="Message for CHP *" rows="4" required="required" data-error="Please, leave us a message."></textarea> <!--- Setting parameters for user input -->
+		
+		
+						</div>
+		
+					</div>
+		
+					<div class="col-md-12"> <!--- Creating a Div spanning 12 columns -->
+		
+						<input type="submit" class="btn btn-success btn-send" value="Send message"> <!--- Creating a Form submit button -->
+		
+					</div>
+		
+				</div>
+		
+				<div class="row"> <!--- Creating a Form row -->
+		
+					<div class="col-md-12"> <!--- Creating a Div spanning 12 columns -->
+		
+						<p class="text-muted">
+		
+							<strong>*</strong> Please enter the required information. <!--- Error msg if field requirements are not met -->  
+		
+						</p>
+		
+					</div>
+		
+				</div>
+		
+			</div>
+		
+		</form>
 
-		</div>
+	</section>
 
-		<hr> <!--- Creating a Horizontal Rule -->
-
-	</div>
-	
-</div>
-
-<!--- Three Column Section -->
-
-<div class="container-fluid padding">
-	
-	<div class="row text-center padding">
-
-		<div class="col-xs-12 col-sm-6 col-md-4"> <!--- Presetting grid sizes -->
-
-			<i class="fas fa-laptop"> </i> <!--- Imports HTML logo -->
-
-			<h3>Form</h3> <!--- Creating a heading -->
-
-			<p> Use the <a href="contact.html"> Contact Form </a> on this website to book with us! </p>
-
-		</div>
-
-		<div class="col-xs-12 col-sm-6 col-md-4"> <!--- Presetting grid sizes -->
-
-			<i class="fas fa-envelope"> </i> <!--- Imports Bootstrap logo -->
-
-			<h3>Email</h3> <!--- Creating a heading -->
-
-			<p> Get in touch via admin@chpfinishing.co.uk to organise a booking with our team! </p>
-
-		</div>
-
-		<div class="col-sm-12 col-md-4"> <!--- Presetting grid sizes -->
-
-			<i class="fas fa-phone"> </i> <!--- Imports Phone logo -->
-
-			<h3>Phone</h3> <!--- Creating a heading -->
-
-			<p> Dont be afraid to contact us via 01392 215656 for more information. </p>
-
-		</div>
-
-	</div>
-
-<hr class="my-4"> <!--- Creating a Horizontal Rule -->
-
-</div>
 
 <!--- Connect -->
 
