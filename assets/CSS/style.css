@@ -94,6 +94,46 @@ body {
   z-index: -2;
 }
 
+.accreditations {
+  background-image: url("CHP_Finishing_Services\CHP-Finishing-Services\assets\img\accreditations.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  z-index: -2;
+}
+
+.accreditations img {
+  border: solid black 2px;
+}
+
+.footimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  z-index: -2;
+  margin-bottom: 30px;
+}
+
+.footimg img {
+  border: solid black 10px;
+}
+
 .hero::before {
   content: "";
   position: absolute;
@@ -237,6 +277,14 @@ hr.light-100 {
     font-size: 2.5em; /*---Setting font size to 2.5em --*/
     padding: 1.2rem; /*---Setting padding to 1.2rem --*/
   }
+
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -254,4 +302,123 @@ hr.light-100 {
 
 [class*="col-"] {
   padding: 1rem; /*---Setting padding to 1rem --*/
+}
+
+.testimonial-container {
+  margin-top: 50px;
+  background-color: #cecfd4;
+  color: black;
+  border-radius: 15px;
+  margin: 40px auto;
+  padding: 50px 80px;
+  max-width: 1000px;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+}
+
+.fa-quote-right {
+  left: 30px;
+}
+
+.fa-quote-left {
+  right: 30px;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.gallery-container {
+  width: 80vw;
+  display: flex;
+  margin: auto;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  border-radius: 50px;
+  color: #fff;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
 }
