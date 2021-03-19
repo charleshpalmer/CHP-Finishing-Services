@@ -6,6 +6,6 @@ The purpose of this website was to replace thier old, unresponsive website, show
 
 This application was provided as a live service model, and was my first developer/client interaction, key skills such as Agile Project Management and the use of Version Control and a continuious DevOps Pipeline were used throughout.
 
-#TECHNOLOGIES USED
+# TECHNOLOGIES USED
 
 HTML, CSS, Bootstrap, GIT, Javascript, Netlify, GoDaddy.
